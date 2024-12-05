@@ -53,8 +53,6 @@ git clone  https://github.com/deepfish77/ui_and_api.git
 
 ## Test Demo
 
-The gif is not running here probably due to size, please click on it
-
 ![Test Demo](data/test_demo.gif)
 ## Project Structure
 
