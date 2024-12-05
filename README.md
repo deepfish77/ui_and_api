@@ -39,27 +39,28 @@ This repository contains automated test scripts for Twitch's UI, written in Pyth
 - Selects a random video to validate its playback.
 - Handles scenarios where the video requires a subscription or a user modal appears.
 
----
+## Project Structure
 
+```plaintext
 src/
-├── ui_tests/
-│   ├── pages/
-│   │   ├── main_index_page.py        # Main index page logic
-│   │   ├── search_page.py            # Search page functionality
-│   │   ├── video_page.py             # Video page logic
-│   │   ├── base_page.py              # Base page setup
-│   ├── utils/
-│   │   ├── driver_utils.py           # Utility functions for drivers
-│   │   ├── drivers.py                # Driver management
-│   ├── tests/
-│       └── search_and_load_test.py   # Tests for search and load functionality
-├── api_tests/
-│   ├── api_queries_builder.py        # Utility for making API requests
-│   ├── api_tests.py                  # Contains API test cases
-│   ├── query_data/
-│       └── poems.py                  # Static poem data for validation
-├── requirements.txt                  # Dependencies
-└── README.md                         # Documentation (this file)
+├── ui_tests/                    # Contains UI testing components
+│   ├── pages/                   # Page Object Model (POM) for UI interactions
+│   │   ├── main_index_page.py   # Logic for the main index page
+│   │   ├── search_page.py       # Functionality for the search page
+│   │   ├── video_page.py        # Logic for the video page
+│   │   ├── base_page.py         # Base setup for all pages
+│   ├── utils/                   # Utility functions for UI tests
+│   │   ├── driver_utils.py      # Utility functions for drivers
+│   │   ├── drivers.py           # Driver management
+│   ├── tests/                   # Contains test cases for UI testing
+│   │   └── search_and_load_test.py # Tests for search and load functionality
+├── api_tests/                   # Contains API testing components
+│   ├── api_queries_builder.py   # Utility for making API requests
+│   ├── api_tests.py             # API test cases
+│   ├── query_data/              # Static data for API validation
+│   │   └── poems.py             # Static poem data for validation
+├── requirements.txt             # List of dependencies
+└── README.md                    # Documentation (this file)
 
 ## Usage Instructions
 
@@ -77,4 +78,4 @@ git clone  https://github.com/deepfish77/ui_and_api.git
 
 Below is a demo of the test running locally:
 
-![Test Demo](docs/test_demo.gif)
+![Test Demo](data/test_demo.gif)
