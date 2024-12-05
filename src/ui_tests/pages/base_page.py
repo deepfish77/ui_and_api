@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 # Should be in config file. for the sake of exercise its here
 BASE_PAGE = "https://m.twitch.tv/"
 # For saving screen shots to a file
-SCREENSHOT_PATH = "C:/AutoCourse/practiceback/selenium_automation/screenshots"
+SCREENSHOT_PATH = "C:/YOUR_PATH_TO/screenshots"
 
 
 class BasePage(object):

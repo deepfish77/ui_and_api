@@ -1,6 +1,6 @@
 import pytest
 import random
-from src.ui_tests.utils.driver_utils import driver_wrapper #.driver_utils import driver_wrapper
+from src.ui_tests.utils.driver_utils import driver_wrapper
 from src.ui_tests.pages.main_index_page import TwitchMainPage
 
 
@@ -35,19 +35,17 @@ def test_search_a_term_and_validate_test(search_term, driver=None):
     selected_video = videos[random_int]
     video_page = search_page.click_on_video_and_go_to_page(selected_video)
 
-    # Checking if the content is for subscibled users only
+    # if the content is for SUBSCRIBED USERS?
     subscribed_present = video_page.check_subscribed_present()
     if subscribed_present is True:
         print("The video cannot be played without subscription")
         video_page.take_screenshot_and_save_to_local_directory()
     else:
-        # Checking if there is  a modal before video playing
+        #  a MODAL before video playing ?
         video_page.check_modal_user_present_and_continue()
-        # Checking if the video started playing
+        # ASSERT if the video started playing
         video_page.assert_video_started_playing()
 
         # taking a screenshot
         video_page.take_screenshot_and_save_to_local_directory()
 
-
-test_search_a_term_and_validate_test("StarCraft II")

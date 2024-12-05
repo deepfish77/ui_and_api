@@ -1,0 +1,9 @@
+pytest==7.4.0            # For test management and execution
+selenium==4.15.2         # For UI automation
+requests==2.31.0         # For API requests
+pandas==2.1.2            # For data manipulation (if needed for API responses)
+python-dotenv==1.0.0     # For managing environment variables
+pytest-html==3.2.0       # For generating HTML reports for test runs
+pytest-xdist==3.4.0      # For running tests in parallel
+pytest-rerunfailures==11.2  # For re-running failed tests automatically
+webdriver-manager==4.2.0 # For managing Selenium WebDriver binaries

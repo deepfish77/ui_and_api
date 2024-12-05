@@ -2,8 +2,6 @@ from selenium.webdriver.common.by import By as By
 from src.ui_tests.pages.base_page import BasePage
 from  src.ui_tests.pages.search_page import MobileSearchPage
 
-# import drivers as web_driver
-
 
 class TwitchMainPage(BasePage):
 

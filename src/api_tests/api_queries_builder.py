@@ -1,5 +1,4 @@
 import requests
-import pytest
 
 BASE_URL = "https://poetrydb.org/"
 
@@ -33,5 +32,3 @@ def execute_get_call(base_url, endpoint, header=None, params=None):
         print(f"Request Exception: {req_err}")
 
     return None
-
-

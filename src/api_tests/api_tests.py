@@ -1,5 +1,5 @@
-import pytest
 import json
+import pytest
 from src.api_tests.query_data.poems import ozymandias_poem_1, why_should_p2
 from src.api_tests.api_queries_builder import execute_get_call
 
@@ -68,7 +68,7 @@ def test_static_data_validation(poem_data, endpoint):
 )
 def test_combination_author_and_lines(author, lines):
     """
-    Test Case: Validate JSON output for combination of author and lines.
+    Test Case: Validate Poems output for combination of author and lines.
 
     Steps:
     1. Query the API with a combination of author and specific lines.
@@ -223,9 +223,9 @@ def test_accessing_by_partial_content(title, partial_title, line_content, lineco
     [
         "InvalidTitle123",  # Non-existent title
         "12345",  # Number formatted string
-        "",  # Empty string - This is supposed to Fail
+        "",  # Empty string - This is supposed to Fail :-) - Negative -> Check use case
         "!@#$%^&*()",  # Special characters
-        "<script>alert('XSS')</script>",  # Malicious script attempt - This is failing as well
+        "<script>alert('XSS')</script>",  # Malicious script attempt - This is failing as well  - Negative - open Bug
     ],
 )
 def test_invalid_title_responses(invalid_title):
