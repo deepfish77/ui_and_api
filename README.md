@@ -78,4 +78,4 @@ git clone  https://github.com/deepfish77/ui_and_api.git
 
 Below is a demo of the test running locally:
 
-![Test Demo](data/test_demo.gif)
+![Test Demo](test_demo2.gif)
