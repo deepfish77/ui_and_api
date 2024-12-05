@@ -1,4 +1,4 @@
-# ui_and_api
+# UI and API Test Automation
 UI and API tests implementation
 # PoetryDB API Test Suite
 
@@ -61,7 +61,7 @@ src/
 │   │   └── poems.py             # Static poem data for validation
 ├── requirements.txt             # List of dependencies
 └── README.md                    # Documentation (this file)
-
+'''
 ## Usage Instructions
 
 ### Prerequisites
@@ -71,7 +71,6 @@ src/
 
 ### Clone the Repository
 
-```bash
 git clone  https://github.com/deepfish77/ui_and_api.git
 
 ## Test Demo
