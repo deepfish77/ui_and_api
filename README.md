@@ -39,6 +39,23 @@ This repository contains automated test scripts for Twitch's UI, written in Pyth
 - Selects a random video to validate its playback.
 - Handles scenarios where the video requires a subscription or a user modal appears.
 
+
+## Usage Instructions
+
+### Prerequisites
+
+1. Python version 3.7 or higher.
+2. Install dependencies using `pip`.
+
+### Clone the Repository
+
+git clone  https://github.com/deepfish77/ui_and_api.git
+
+## Test Demo
+
+The gif is not running here probably due to size, please click on it
+
+![Test Demo](data/test_demo.gif)
 ## Project Structure
 
 ```plaintext
@@ -62,19 +79,3 @@ src/
 ├── requirements.txt             # List of dependencies
 └── README.md                    # Documentation (this file)
 '''
-## Usage Instructions
-
-### Prerequisites
-
-1. Python version 3.7 or higher.
-2. Install dependencies using `pip`.
-
-### Clone the Repository
-
-git clone  https://github.com/deepfish77/ui_and_api.git
-
-## Test Demo
-
-The gif is not running here probably due to size, please click on it
-
-![Test Demo](data/test_demo.gif)
