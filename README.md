@@ -76,6 +76,6 @@ git clone  https://github.com/deepfish77/ui_and_api.git
 
 ## Test Demo
 
-Below is a demo of the test running locally:
+The gif is not running here probably due to size, please click on it
 
-![Test Demo](test_demo2.gif)
+![Test Demo](data/test_demo.gif)
