@@ -1,6 +1,6 @@
 from selenium import webdriver
 
-PATH_TO_DRIVER = "C:\\AutoCourse\\practiceback\\drivers\\chromedriver.exe"
+PATH_TO_DRIVER = "C:\\your\\path\\drivers\\chromedriver.exe"
 
 
 def _get_mobile_emulation_options(device_name="Samsung Galaxy S10"):

@@ -49,3 +49,4 @@ def test_search_a_term_and_validate_test(search_term, driver=None):
         # taking a screenshot
         video_page.take_screenshot_and_save_to_local_directory()
 
+test_search_a_term_and_validate_test("Minecraft")
